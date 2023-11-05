@@ -28,6 +28,11 @@ function App() {
       <div className={styles.box}>app js</div>
 
       <a href={wink.url}>{wink.name}</a>
+
+      <h3>props: Properties</h3>
+      <Hello age={10} />
+      <Hello age={20} />
+      <Hello age={30} />
     </div>
   );
 }
