@@ -1,4 +1,6 @@
 import './App.css';
+import Hello from './component/Hello';
+import Welcome from './component/Welcome';
 
 function App() {
   const pagename = 'Hi,Wink Team 3';
@@ -8,6 +10,7 @@ function App() {
   };
   return (
     <div className="App">
+      <Welcome />
       <h1
         style={{
           color: '#00498c',
@@ -17,6 +20,7 @@ function App() {
       >
         {pagename}
       </h1>
+      <Hello />
 
       <a href={wink.url}>{wink.name}</a>
     </div>
