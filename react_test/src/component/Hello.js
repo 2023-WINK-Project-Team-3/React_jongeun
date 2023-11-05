@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import styles from './Hello.module.css';
 
 let tt;
@@ -14,6 +16,8 @@ export default function Hello() {
     console.log(txt.target.value);
   }
 
+  const [name, setName] = useState('test1');
+
   return (
     <div>
       <h1>Hello</h1>
@@ -21,6 +25,15 @@ export default function Hello() {
       <button onClick={showMembers}>show members</button>
       <input type="text" onChange={showText}></input>
       <button onClick={() => console.log(tt)}>print console</button>
+
+      <h2 id="name">{name}</h2>
+      <button
+        onClick={() => {
+          setName(name === 'test1' ? 'test2' : 'test1');
+        }}
+      >
+        change
+      </button>
     </div>
   );
 }
