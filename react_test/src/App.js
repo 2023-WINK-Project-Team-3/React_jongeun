@@ -1,6 +1,7 @@
 import './App.css';
 import Hello from './component/Hello';
 import Welcome from './component/Welcome';
+import styles from './App.module.css';
 
 function App() {
   const pagename = 'Hi,Wink Team 3';
@@ -16,11 +17,15 @@ function App() {
           color: '#00498c',
           // 컬러:코발트블루
           backgroundColor: '#c3dde1',
+          borderRight: '12px solid #000',
+          marginBottom: '100px',
+          opacity: 0.5,
         }}
       >
         {pagename}
       </h1>
       <Hello />
+      <div className={styles.box}>app js</div>
 
       <a href={wink.url}>{wink.name}</a>
     </div>
