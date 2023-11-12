@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import Day from './component/Day';
 import DayList from './component/DayList';
 import EmptyPage from './component/EmptyPage';

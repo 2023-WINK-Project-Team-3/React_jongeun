@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import dummy from '../db/data.json';
 import { useParams } from 'react-router-dom';
 
